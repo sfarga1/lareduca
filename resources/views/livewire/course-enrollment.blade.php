@@ -6,7 +6,7 @@
             <option value="{{ $course->id }}">{{ $course->title }}</option>
             @endforeach
         </select>
-        <button type="submit">Enroll</button>
+        <button type="submit" class="text-gray-50">Enroll</button>
     </form>
 
     @if(session()->has('message'))
@@ -14,10 +14,10 @@
     @endif
 
     
-    <h2>Enrollments</h2>
+    <h2 class="text-gray-50">Enrollments</h2>
     @foreach($enrollments as $enrollment)
     <div>
-        <p>{{ $enrollment->user->name }} - {{ $enrollment->course->title }}</p>
+        <p class="text-gray-50">{{ $enrollment->user->name }} - {{ $enrollment->course->title }}</p>
     </div>
     @endforeach
     

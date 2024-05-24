@@ -5,9 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
-                        <x-application-mark class="block h-9 w-auto" />
-                    </a>
+                    <img src="{{ asset('images/lareduca_logo.png') }}" class="h-16 w-auto lg:h-16" alt="Logo">
                 </div>
 
                 <!-- Navigation Links -->

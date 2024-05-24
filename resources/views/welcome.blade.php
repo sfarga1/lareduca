@@ -14,7 +14,7 @@
     <div class="flex-grow">
         <header class="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
             <div class="flex lg:justify-center lg:col-start-2">
-                <img src="{{ asset('images/LogoBTM.png') }}" class="h-28 w-auto lg:h-52" alt="Logo">
+                <img src="{{ asset('images/lareduca_logo.png') }}" class="h-28 w-auto lg:h-52" alt="Logo">
             </div>
         </header>
 
