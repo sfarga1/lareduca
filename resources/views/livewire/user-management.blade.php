@@ -1,6 +1,6 @@
 <div class="container mx-auto p-4">
     <div class="flex justify-between items-center mb-4">
-        <h2 class="text-2xl font-semibold">User Management</h2>
+        <h2 class="text-2xl font-semibold text-white">User Management</h2>
         <button wire:click="create()" class="bg-blue-500 text-white px-4 py-2 rounded">Create User</button>
     </div>
 

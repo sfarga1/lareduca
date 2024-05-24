@@ -8,45 +8,7 @@
                     <img src="{{ asset('images/lareduca_logo.png') }}" class="h-16 w-auto lg:h-16" alt="Logo">
                 </div>
 
-                <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
-                    <!-- Courses -->
-                    <x-nav-link href="{{ route('courses') }}" :active="request()->routeIs('courses')">
-                        {{ __('Courses') }}
-                    </x-nav-link>
-                    <!-- Assignments -->
-                    <x-nav-link href="{{ route('assignments') }}" :active="request()->routeIs('assignments')">
-                        {{ __('Assignments') }}
-                    </x-nav-link>
-                    <!-- Users -->
-                    @if(Auth::user()->role === 'admin')
-                    <x-nav-link href="{{ route('users') }}" :active="request()->routeIs('users')">
-                        {{ __('Users') }}
-                    </x-nav-link>
-                    @endif
-                    <!-- Assignment Submissions -->
-                    @if(Auth::user()->role === 'admin' || Auth::user()->role === 'teacher')
-                    <x-nav-link href="{{ route('assignment.submissions', ['assignmentId' => 1]) }}" :active="request()->routeIs('assignment.submissions')">
-                        {{ __('Assignment Submissions') }}
-                    </x-nav-link>
-                    
-                    <x-nav-link href="{{ route('enrollments') }}" :active="request()->routeIs('enrollments')">
-                        {{ __('Course Enrollments') }}
-                    </x-nav-link>
-                    @elseif(Auth::user()->role === 'student')
-                    <x-nav-link href="{{ route('enrollments') }}" :active="request()->routeIs('enrollments')">
-                        {{ __('Course Enrollments') }}
-                    </x-nav-link>
-                    <x-nav-link href="{{ route('games') }}" :active="request()->routeIs('games')">
-                        {{ __('Games') }}
-                    </x-nav-link>
-                    @endif
-
-                </div>
-            </div>
+                
 
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <!-- Teams Dropdown -->

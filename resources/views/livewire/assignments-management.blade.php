@@ -1,4 +1,4 @@
-<div class="container mx-auto p-6 bg-slate-800;">
+<div class="container mx-auto p-6 bg-teal-700;">
     <h1 class="text-3xl font-bold text-gray-50 mb-6">Assignments</h1>
     @if(Auth::user()->role != 'student')
     <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" wire:click="create()">Create New Assignment</button>

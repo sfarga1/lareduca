@@ -10,15 +10,17 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
-<body class="font-sans antialiased bg-gray-100 min-h-screen flex flex-col justify-between bg-cover bg-center" style="background-image: url('{{ asset('images/Fondo.png') }}');">
+<body class="font-sans antialiased bg-gray-100 min-h-screen flex flex-col justify-between bg-cover bg-center" style="background-image: url('{{ asset('images/wallpaper.jpg') }}');">
     <div class="flex-grow">
         <header class="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
             <div class="flex lg:justify-center lg:col-start-2">
                 <img src="{{ asset('images/lareduca_logo.png') }}" class="h-28 w-auto lg:h-52" alt="Logo">
             </div>
         </header>
-
-        <div class="flex items-center justify-center flex-grow">
+        <div>
+            <h1 class="text-white flex justify-center items-center ">LAREDUCA</h1>
+        </div>
+        <div class="flex items-center justify-center flex-grow mt-16">
             @if (Route::has('login'))
                 <nav class="flex space-x-4">
                     @auth
